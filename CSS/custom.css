@@ -1,0 +1,508 @@
+*, :before, :after{
+  box-sizing: border-box;
+}
+body, html{
+  margin:0;
+  padding:0;
+}
+
+.navbar{
+  position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:5;
+}
+ .carousel-item{
+  max-height: 50vh;
+}
+main{
+  margin-top: 56px;
+}
+
+.carousel-item .carousel-caption{
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+@media(max-width: 768px){
+  .carousel-item .carousel-caption{
+    display: none;
+  }
+}
+
+
+.fa-chevron-double-right{
+  font-size: 0.8em;
+}
+
+.card img{
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
+#welcome .card-text{
+  min-height: 200px;
+}
+
+#container-cards .card-text {
+    display: -webkit-box;
+    margin: 0 auto;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#call_to_action .call-action-content{
+  display: flex;
+  justify-content: space-between;
+}
+@media(max-width: 768px){
+  #call_to_action .call-action-content{
+    flex-direction: column;
+  }
+}
+
+.form-contact{
+  margin:30px;
+  padding-top: 20px;
+}
+
+.form-contact fieldset{
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: rgba(52,58,64,0.8);
+  padding: 25px;
+}
+.form-contact label{
+  color: white;
+}
+
+
+body{
+    margin:0 auto;
+    font-family: 'Lora', serif;
+    color:white;                        
+    background-color: #231f20;
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#photo{            
+    width: 30%;
+    text-align: center;
+    padding: 10%;
+}
+
+#photo img{
+    width:40%;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+
+#content-header{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.name{
+    flex: 2;
+    width:60%;
+    padding-top: 10%;
+}
+
+.name h1{
+    display:flex;
+    flex-direction: column;
+}
+.name h1 span:first-child{
+    color:lightgrey;
+    align-items:flex-start;
+    font-size: 55px
+}
+.name h1 span:last-child{
+    color:#ffd900;
+    text-transform: uppercase;
+    font-size: 60px;
+
+}
+.rrss{
+    width: 30%;            
+    align-self: flex-end;
+    text-align: center;
+}
+.rrss i{
+    color: white;
+}
+ul{
+    padding: 0;
+}
+.rrss li{
+    display: inline-block;
+    padding:5px;
+    font-size: 30px;
+}
+
+.empty{
+    width: 94%;
+    border-top: 1px solid #ffd900;
+}
+.location{
+    width:100%;
+    display: flex;
+    justify-content: space-around; 
+    padding-top: 5%;
+}
+.location ul{
+    width: 100%;            
+    margin-right: 15px;
+}
+
+.location li{
+    display: inline-block;
+    width: calc(25% - 10px);
+}
+.location li a{    
+    color:white;
+    text-decoration: none;           
+}
+
+.black{
+    font-weight: bold;
+}
+
+.padding-bottom{
+    padding-bottom: 5px;
+}
+
+
+/******* MAIN ***************/
+#intro, #skills, 
+#experiences, #education, #footer{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_side{
+    flex-basis: 30%;
+    text-align: center;
+    align-self: stretch;
+    padding: 0 30px;
+}
+.right_side{
+    flex-basis: 70%;
+    padding: 30px;
+    padding-right: 80px;
+}        
+
+
+
+.left_side h2{
+    text-align: end;
+    margin-bottom:0;
+    margin-top: 25px;
+    text-transform: uppercase;
+    color: #ffd900;
+}
+.left_side p{
+    text-align: end;
+    margin-top:5px;
+}
+
+#intro .right_side p{
+    margin-top:0;
+}
+
+
+#skills .list-content{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+    margin:0;
+}
+
+
+
+#skills .list-content li{
+    width: calc(50% - 30px);
+    margin-bottom: 20px;
+}      
+
+
+#skills .list-content li h3{
+    margin-top: 0px;            
+    margin-bottom: 0px;
+}
+
+
+
+/*experience*/
+#experiences .experience,
+#education .experience{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-between;
+    padding: 0;
+    margin:0;
+    border-left: 2px solid lightgrey;
+    padding-bottom: 30px;
+    position: relative;
+}
+
+#experiences .experience .information,
+#education .experience .information{
+    flex-basis: 40%;
+    padding-left: 20px;
+}
+
+#experiences .experience .description,
+#education .experience .description {
+    flex-basis: 55%;
+}
+
+#experiences p,
+#education p{
+    margin-top:0;
+}
+#experiences .year,
+#experiences .city,
+#experiences .job,
+#experiences h3,
+#education .year,
+#education .city,
+#education .job,
+#education h3{
+    margin: 10px 0px;
+}
+#experiences .year,
+#experiences .city,
+#education .year,
+#education .city{
+    font-size: 12px;
+    color: lightgrey;
+}
+
+#experiences .experience .fa-circle,
+#education .experience .fa-circle{
+    position: absolute;
+    left: -9px;
+    color: #ffd900;
+    top: 3px;
+}
+#education{
+    margin-top: -60px;
+}
+
+/* SKILLS */
+#skills .list-content li:first-child h3:before{
+    content: "80%";
+    margin-right: 10px;
+    color:#ffd900;
+}
+#skills .list-content li:last-child h3:before{
+    content: "95%";
+    margin-right: 10px;
+    color:#ffd900;
+}
+#skills .list-content li:nth-child(2) h3:before{
+    content: "75%";
+    margin-right: 10px;
+    color:#ffd900;
+}
+#skills .list-content li:nth-child(3) h3:before{
+    content: "70%";
+    margin-right: 10px;
+    color:#ffd900;
+}
+#skills .list-content li:nth-child(4) h3:before{
+    content: "65%";
+    margin-right: 10px;
+    color:#ffd900;
+}
+#skills .list-content li:nth-child(5) h3:before{
+    content: "90%";
+    margin-right: 10px;
+    color:#ffd900;
+}
+#skills .list-content li:nth-child(6) h3:before{
+    content: "50%";
+    margin-right: 10px;
+    color:#ffd900;
+}
+#skills .list-content li:nth-child(7) h3:before{
+    content: "85%";
+    margin-right: 10px;
+    color:#ffd900;
+}
+
+#skills .list-content li h3{
+    margin-bottom: 0px;
+}
+
+#skills .bar{
+    width: 100%;
+    height: 5px;
+    background: lightgrey;
+    margin-bottom: 30px;
+    margin-top: 8px;
+}
+.progress{
+    height: 5px;
+    background: #ffd900;
+}
+
+.progress-80{
+    width: 80%;
+    animation-name: moveBarProgress80;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; 
+    animation-play-state: running;
+}
+.progress-75{
+    width: 75%;
+    animation-name: moveBarProgress75;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; 
+    animation-play-state: running;
+}
+.progress-70{
+    width: 70%;
+    animation-name: moveBarProgress70;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; 
+    animation-play-state: running;
+}
+.progress-95{
+    width: 95%;
+    animation-name: moveBarProgress95;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; 
+    animation-play-state: running;
+}
+.progress-65{
+    width: 65%;
+    animation-name: moveBarProgress65;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; 
+    animation-play-state: running;
+}
+.progress-90{
+    width: 90%;
+    animation-name: moveBarProgress90;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; 
+    animation-play-state: running;
+}
+.progress-50{
+    width: 50%;
+    animation-name: moveBarProgress50;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; 
+    animation-play-state: running;
+}
+.progress-85{
+    width: 85%;
+    animation-name: moveBarProgress85;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1; 
+    animation-play-state: running;
+}
+
+@keyframes moveBarProgress80{
+    0%{width: 0%}
+    100%{width: 80%}
+}
+@keyframes moveBarProgress75{
+    0%{width: 0%}
+    100%{width: 75%}
+}
+@keyframes moveBarProgress70{
+    0%{width: 0%}
+    100%{width: 70%}
+}
+@keyframes moveBarProgress65{
+    0%{width: 0%}
+    100%{width: 65%}
+}
+@keyframes moveBarProgress90{
+    0%{width: 0%}
+    100%{width: 90%}
+}
+@keyframes moveBarProgress50{
+    0%{width: 0%}
+    100%{width: 50%}
+}
+@keyframes moveBarProgress85{
+    0%{width: 0%}
+    100%{width: 85%}
+}
+@keyframes moveBarProgress95{
+    0%{width: 0%}
+    100%{width: 95%}
+}
+
+
+/**** QUERY **********/
+ @media (max-width: 992px){
+      header{
+          flex-wrap: wrap;
+          justify-content: center;
+      }  
+      #photo, .rrss, .empty,
+      #skills .list-content li{
+        width:100%;
+      }
+
+      .name{
+        text-align: center;
+        padding-top: 0;
+      }
+
+      .location{
+        padding-top: 5%;
+      }
+}
+
+@media (max-width: 768px){
+    #experiences .experience .information, 
+    #education .experience .information {
+        flex-basis: 100%;
+    }
+    #experiences .experience .description, 
+    #education .experience .description {
+         flex-basis: 100%;
+         padding-left: 20px;
+    }
+    .right_side{
+        padding-right: 30px;
+    }
+    #intro, #skills, 
+    #experiences, #education{
+        display:block;
+    }
+    .left_side h2, .left_side p{
+        text-align: center;
+    }
+}
